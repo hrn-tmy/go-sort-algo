@@ -20,7 +20,7 @@ func main() {
 	fmt.Println("descNums Before: ", descNums)
 	for i := 0; i < len(descNums); i++ { // ラウンド数
 		for j := len(descNums) - 1; j > 0; j-- { // 実際の処理(降順処理)
-			if descNums[j] < descNums[j-1] {
+			if descNums[j] > descNums[j-1] {
 				descNums[j], descNums[j-1] = descNums[j-1], descNums[j]
 			}
 		}
